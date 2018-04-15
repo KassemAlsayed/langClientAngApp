@@ -1,0 +1,12 @@
+<h3></h3>
+  <div class="grid grid-pad">
+    <a *ngFor="let lang of languages"  [routerLink]="['/detail', lang.id]"  class="col-1-4">
+      <div class="module lang">
+        <img src="{{lang.icon}}" alt="Description" style="width:60px;height:60px;" vspace="5"/><h3>{{lang.name}}</h3>
+
+      </div>
+    </a>
+  </div>
+  <div>
+
+<!-- <lang-search></lang-search> -->

@@ -1,0 +1,15 @@
+<div id="search-component">
+   <table>
+  <tr>
+    <td><h4>Search: </h4> </td>
+    <td><input #searchBox id="search-box" (keyup)="search(searchBox.value)"/></td >
+  </tr>
+</table>
+
+</div>  
+  <div>
+    <div *ngFor="let lang of languages | async"
+         (click)="gotoDetail(lang)" class="search-result" >
+      {{lang.id}} -- {{lang.name}}
+    </div>
+</div>

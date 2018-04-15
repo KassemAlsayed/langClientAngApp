@@ -1,0 +1,99 @@
+.selected {
+  background-color:grey !important;
+  color: white;
+}
+.languages {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.languages li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.languages li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.languages li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.languages .text {
+  position: relative;
+  top: -3px;
+}
+.languages .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+button {
+  font-family: Arial;
+  font-size: 16px;
+  background-color: gray;
+  color:white;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  margin: .1em;
+}
+button:hover {
+  background-color:orange;
+}
+button.delete {
+  float:right;
+  margin-top: 2px;
+  margin-right: .8em;
+  background-color: gray !important;
+  color:white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+.blueBorder {
+    border-style: solid;
+    border-color: #0000FF;
+    background-color: #0000FF;
+}
+
+input{
+  height:15px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}

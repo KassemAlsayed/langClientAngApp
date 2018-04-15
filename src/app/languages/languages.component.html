@@ -1,0 +1,48 @@
+<h2></h2>
+<div>
+  <label>Language:</label> <input #LangName />
+  <button (click)="add(LangName.value); LangName.value=''">
+    Add
+  </button>
+</div>
+<!--
+<ul class="languages">
+  <li *ngFor="let lang of languages" (click)="onSelect(lang)"
+      [class.selected]="lang === selectedLang">
+    <span class="badge">{{lang.id}}</span>
+    <span>{{lang.name}}</span>
+    <button class="delete"
+      (click)="delete(lang); $event.stopPropagation()">x</button>
+  </li>
+</ul>
+-->
+
+
+<table>
+    <tr>
+    <th>Icon</th>
+    <th>ID</th>
+    <th>Language</th>
+    <th>Comment</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let lang of languages" (click)="onSelect(lang)"
+      [class.selected]="lang === selectedLang"> 
+        <img src="{{lang.icon}}" alt="Description" style="width:40px;height:40px;" vspace="5"/>
+
+    <td>{{lang.id}}</td >
+    <td>{{lang.name}}</td >
+    <td>{{lang.comment}}</td >
+    <td>
+       <button class="button" style="float:right;"
+        (click)="delete(lang); $event.stopPropagation()">Delete</button>
+    </td>
+  </tr>
+</table>
+<div style="background-color:lightGray; width:100%; height:100%;" *ngIf="selectedLang">
+  <p> &nbsp;</p>
+  <h3>
+   <button (click)="gotoDetail()">Edit</button> {{selectedLang.id}} - {{selectedLang.name | uppercase}}: <span style="color:blue"> {{selectedLang.comment}} </span>
+  </h3>
+  
+</div>    

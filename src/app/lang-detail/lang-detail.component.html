@@ -1,0 +1,16 @@
+<div *ngIf="lang">
+
+ 
+ <table>
+  <tr>
+    <td><img src="{{lang.icon}}" alt="Description" style="width:40px;height:40px;" vspace="5"/> </td>
+    <td><input [(ngModel)]="lang.name" placeholder="name" /></td >
+    <td>&nbsp; &nbsp;&nbsp;&nbsp;Comment:<input [(ngModel)]="lang.comment" placeholder="comment" /></td >
+<!--    <td><span style="color:blue"> {{lang.comment}} </span></td > -->    
+  </tr>
+</table>
+ 
+  <div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>
