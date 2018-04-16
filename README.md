@@ -5,6 +5,10 @@ It works uing an embedded db or an external one like mysql
 # how to get the code
 git clone https://github.com/KassemAlsayed/langClientAngApp
 
+# requires
+- node
+- npm
+
 # how to run
 - npm install
 - npm run build
